@@ -1,0 +1,4 @@
+chrome://flags/#smooth-scrolling     search this and set it to *ENABLED*
+
+Install =>
+npm i intersection-observer

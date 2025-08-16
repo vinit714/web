@@ -1,0 +1,47 @@
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+    width: 100px;
+}
+
+.hexagon1 {
+    top: 30vh;
+    left: 40%;
+    position: absolute;
+    margin: 0 auto;
+    background-color: rgb(0, 74, 74);
+    border-radius: 10px;
+    width: 100px; 
+    height: 63px;
+    box-sizing: border-box;
+    transition: all 1s;
+    border: 0.4vh solid aqua;
+}
+
+.hexagon1:before, .hexagon1:after {
+    content: "";
+    border: inherit;
+    position: absolute;
+    top: -0.5vh;
+    left: -0.5vh;
+    background-color: rgb(0, 74, 74);
+    border-radius: inherit;
+    height: 100%;
+    width: 100%;
+}
+
+.hexagon1:before {
+    transform: rotate(60deg);
+}
+.hexagon1:after {
+    transform: rotate(-60deg);
+}
